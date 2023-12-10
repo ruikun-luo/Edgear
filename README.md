@@ -25,7 +25,7 @@ Gear and Nydus show similar performance. The bandwidth is 500MB. The images are 
 ### 1. The detailed time of different compositions of figure 2.
 ![details](img/details.png)
 
-As the conventional image needs to download the entire image, the downloading time is long (24.07s for Nginx when RTT is 10 ms). As on-demand images download a file when it is required, the file amount that need to be downloaded is reduced. Therefore the time of downloading data is shorter (12.78s for Nginx when RTT is 10 ms). However, as the RTT increases the downloading time of on-demand images increase obviously, because of the continuous and long request from the network (25.84s for Nginx when RTT is 300 ms). Furthermore, on-demand images show longer running time due to the network redirection and IO redirection through FUSE.
+As the conventional container needs to download the entire image, the downloading time is long (24.07s for Nginx when RTT is 10 ms). As the on-demand container downloads a file when it is required, the file amount that need to be downloaded is reduced. Therefore, the time of downloading data is shorter (12.78s for Nginx when RTT is 10 ms). However, as the RTT increases the downloading time of on-demand images increase obviously, because of the continuous and long request from the network (25.84s for Nginx when RTT is 300 ms). Furthermore, on-demand images show longer running time due to the network redirection and IO redirection through FUSE.
 
 ### 2. Results with different random graph model. 
 ![random-model](img/random-model.png)
